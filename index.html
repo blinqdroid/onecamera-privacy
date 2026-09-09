@@ -37,6 +37,7 @@
   li { margin-bottom: .6rem; }
   strong { font-weight: 600; }
   a { color: var(--accent); }
+  .lede { font-size: 1.06rem; }
   /* Wide content must scroll inside its own box, never the page. */
   .table-wrap { overflow-x: auto; margin: 0 0 .85rem; }
   table { border-collapse: collapse; width: 100%; min-width: 26rem; font-size: .95rem; }
@@ -51,47 +52,31 @@
 <h1>Privacy Policy — One Camera</h1>
 <p class="effective">Effective 9 September 2026</p>
 
-<p>One Camera is a camera app published by <strong>Blinqdroid</strong>. This policy explains what the
-app does with your data. It is short because the app does very little with it.</p>
+<p class="lede">One Camera is a camera app published by <strong>Blinqdroid</strong>. This policy
+explains what the app does with your data. It is short because the app does not collect any.</p>
+
+<h2>One Camera collects nothing</h2>
+<p>The app gathers no personal data, sends nothing to us, and has no servers to send it to. There is
+no account, no sign-in, no analytics, no advertising, and no tracking of any kind.</p>
+<p>This is not a promise about how carefully we handle your data. There is no data.</p>
 
 <h2>Your photos and videos stay on your device</h2>
 <p>One Camera never uploads, copies, or transmits the pictures or video you take. Everything you
 capture is written to your device's own camera folder (<code>DCIM/Camera</code>), alongside anything
-your phone's built-in camera has taken, and is yours alone. No image or video data of any kind is
-sent anywhere.</p>
-<p>We have no servers that hold your media, no cloud backup, and no way to see what you shoot.</p>
-
-<h2>What the app does collect</h2>
-<p>One Camera sends diagnostic reports so that faults can be found and fixed. Each report
-contains:</p>
-<ul>
-  <li><strong>A random installation identifier.</strong> A random value created the first time the
-    app runs with diagnostics on, and kept on your device. It is specific to this app: it is
-    <strong>not</strong> your Google Advertising ID, not your Android device ID, and cannot be used
-    to recognise you in any other app or service. Uninstalling One Camera destroys it, and
-    reinstalling creates a new one.</li>
-  <li><strong>A session identifier</strong> distinguishing one run of the app from another.</li>
-  <li><strong>Device information:</strong> manufacturer, model, device name, and Android version.</li>
-  <li><strong>App information:</strong> the app's name and version.</li>
-  <li><strong>Fault reports:</strong> error messages and technical stack traces, including reports
-    of crashes.</li>
-  <li><strong>Capture diagnostics:</strong> which camera was used, which processing path a photo
-    took, how many frames a multi-frame merge combined, and how long it took.</li>
-</ul>
-<p>Reports also carry the time they were recorded.</p>
-<p>This is the complete list. The app does not collect your name, email address, phone number,
-contacts, accounts, location, or the contents of anything you capture.</p>
+your phone's built-in camera has taken, and is yours alone.</p>
+<p>We have no way to see what you shoot.</p>
 
 <h2>What the app does not do</h2>
 <ul>
   <li><strong>No location.</strong> The app requests no location permission and records no location.
     Your photos are not geotagged by One Camera.</li>
   <li><strong>No advertising.</strong> There are no ads and no advertising or marketing SDKs.</li>
-  <li><strong>No analytics or tracking.</strong> Nothing profiles your behaviour or follows you
-    between apps.</li>
+  <li><strong>No analytics, telemetry or crash reporting.</strong> Nothing is measured, recorded or
+    sent — not even anonymously, and not even when the app fails.</li>
   <li><strong>No account.</strong> You never sign in, and there is nothing to sign in to.</li>
-  <li><strong>No data selling or sharing.</strong> Collected data is not sold, rented, or shared for
-    advertising.</li>
+  <li><strong>No identifiers.</strong> The app does not read your advertising ID or your Android
+    device ID, and does not create an identifier of its own.</li>
+  <li><strong>No data selling or sharing.</strong> There is nothing to sell or share.</li>
 </ul>
 
 <h2>Purchases</h2>
@@ -99,6 +84,8 @@ contacts, accounts, location, or the contents of anything you capture.</p>
 Billing</strong>. Payment details are entered into Google Play and are never seen by, sent to, or
 stored by One Camera or Blinqdroid. The app asks Google Play whether a purchase exists and receives
 only a yes or no.</p>
+<p>Google's own handling of that transaction is covered by
+<a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
 <p>The seven-day trial is tracked by a timestamp stored on your own device. Nothing about the trial
 is sent anywhere.</p>
 
@@ -109,40 +96,25 @@ is sent anywhere.</p>
   <tbody>
     <tr><td>Camera</td><td>To show the viewfinder and take photos and video. Without it the app cannot function.</td></tr>
     <tr><td>Microphone</td><td>To record audio with video.</td></tr>
-    <tr><td>Internet</td><td>To send the diagnostic reports described above.</td></tr>
-    <tr><td>Network state</td><td>To check whether there is a connection before contacting the Play Store about a purchase. It is added by Google's billing library rather than requested by One Camera, and reveals only whether you are online.</td></tr>
+    <tr><td>Internet</td><td>Required by the Google Play Billing library to check your purchase. One Camera itself makes no network requests.</td></tr>
+    <tr><td>Network state</td><td>Also from the billing library: it checks whether you are online before contacting the Play Store.</td></tr>
     <tr><td>Storage (Android&nbsp;9 and older only)</td><td>To save your photos and videos to the gallery. Android&nbsp;10 and newer need no storage permission.</td></tr>
   </tbody>
 </table>
 </div>
-
-<h2>Where diagnostic data goes and how long it is kept</h2>
-<p>Diagnostic reports are sent over an encrypted connection to a collection service operated on
-behalf of Blinqdroid and used only to diagnose faults in the app. They are retained for no longer
-than <strong>90 days</strong> and then deleted.</p>
-
-<h2>Turning diagnostics off</h2>
-<p>Diagnostic reporting is on by default and you can switch it off at any time: open
-<strong>Settings</strong> in the app and turn off <strong>Send anonymous diagnostics</strong> under
-<em>Privacy</em>.</p>
-<p>Switching it off stops all reporting immediately, discards anything not yet sent, and
-<strong>deletes the installation identifier from your device</strong>. If you later switch it back
-on, a new random identifier is created — it is not the old one, so reports from before and after
-cannot be connected.</p>
+<p>Internet and network access come with Google's billing library rather than from anything One
+Camera does. They are listed here because they appear on the app's Play Store listing and you are
+entitled to know why.</p>
 
 <h2>Your rights</h2>
-<p>You can ask what diagnostic data is associated with your installation, ask for it to be deleted,
-or object to its collection, by writing to
-<a href="mailto:blinqdroid@gmail.com">blinqdroid@gmail.com</a>. Because the installation identifier
-is random and held only on your device, please include it if you can — the app cannot be traced back
-to you any other way, so without it we may be unable to find the matching records. Uninstalling the
-app stops all collection immediately and permanently.</p>
-<p>Depending on where you live you may have further rights over your personal data, including under
-the UK and EU General Data Protection Regulation and the California Consumer Privacy Act. Requests
-can be sent to the same address.</p>
+<p>Because the app collects nothing, there is no personal data of yours to access, correct, export or
+delete, and no request you need to make of us. Uninstalling the app removes it and its settings from
+your device.</p>
+<p>If you have a question about this policy, write to
+<a href="mailto:blinqdroid@gmail.com">blinqdroid@gmail.com</a>.</p>
 
 <h2>Children</h2>
-<p>One Camera is not directed at children and does not knowingly collect data from children.</p>
+<p>One Camera is not directed at children. It collects nothing from anyone, children included.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the revised version will be posted at this address with a new effective
