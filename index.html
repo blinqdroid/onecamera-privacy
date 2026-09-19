@@ -50,33 +50,72 @@
 <main>
 
 <h1>Privacy Policy — One Camera</h1>
-<p class="effective">Effective 9 September 2026</p>
+<p class="effective">Effective 19 September 2026</p>
 
 <p class="lede">One Camera is a camera app published by <strong>Blinqdroid</strong>. This policy
-explains what the app does with your data. It is short because the app does not collect any.</p>
+explains what happens to your data when you use it.</p>
 
-<h2>One Camera collects nothing</h2>
-<p>The app gathers no personal data, sends nothing to us, and has no servers to send it to. There is
-no account, no sign-in, no analytics, no advertising, and no tracking of any kind.</p>
-<p>This is not a promise about how carefully we handle your data. There is no data.</p>
+<h2>The short version</h2>
+<ul>
+  <li>Your photos and videos <strong>never leave your device</strong>. We cannot see what you shoot.</li>
+  <li>One Camera has <strong>no account, no sign-in, and no analytics</strong> of its own, and
+    Blinqdroid runs no servers that receive your data.</li>
+  <li>The app includes <strong>Google AdMob</strong>, which provides one optional feature: after your
+    free trial ends, you can watch a short ad to use One Camera Pro for 24 hours. Google's ad software
+    collects some device and usage information, described below.</li>
+</ul>
 
 <h2>Your photos and videos stay on your device</h2>
 <p>One Camera never uploads, copies, or transmits the pictures or video you take. Everything you
 capture is written to your device's own camera folder (<code>DCIM/Camera</code>), alongside anything
 your phone's built-in camera has taken, and is yours alone.</p>
-<p>We have no way to see what you shoot.</p>
 
-<h2>What the app does not do</h2>
+<h2>Advertising (Google AdMob)</h2>
+<p>One Camera includes the Google Mobile Ads SDK and Google's User Messaging Platform, both provided
+by Google. They power the optional <strong>24-hour Pro pass</strong>: once your free trial has ended,
+you can choose to watch one rewarded ad to use every Pro feature for a day. No ad is shown unless you
+ask for one, and people who buy Pro never see an ad.</p>
+<p>Google's ad software is part of the app and may collect the following, in particular when you
+choose to watch an ad:</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Data</th><th>Used for</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Approximate location</strong>, estimated from your device's IP address</td><td>Showing relevant ads, measuring ads, preventing fraud</td></tr>
+    <tr><td><strong>Device identifiers</strong>: your Android advertising ID and app set ID</td><td>Showing and measuring ads, preventing fraud</td></tr>
+    <tr><td><strong>App interactions</strong>, such as app launches, taps and ad views</td><td>Measuring ads, analytics</td></tr>
+    <tr><td><strong>Diagnostics</strong>: app and ad performance, such as launch time and responsiveness</td><td>Keeping ads working, analytics</td></tr>
+  </tbody>
+</table>
+</div>
+<p>This information is sent to <strong>Google</strong>, encrypted in transit, and handled under
+<a href="https://policies.google.com/privacy">Google's privacy policy</a>. Google explains how it uses
+data from apps that show its ads at
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from
+sites or apps that use our services</a>.</p>
+<p>Blinqdroid does not receive this information in any form that identifies you, and does not sell
+it.</p>
+<p><strong>Your choices</strong></p>
 <ul>
-  <li><strong>No location.</strong> The app requests no location permission and records no location.
-    Your photos are not geotagged by One Camera.</li>
-  <li><strong>No advertising.</strong> There are no ads and no advertising or marketing SDKs.</li>
-  <li><strong>No analytics, telemetry or crash reporting.</strong> Nothing is measured, recorded or
-    sent — not even anonymously, and not even when the app fails.</li>
+  <li><strong>Consent (EEA, UK and Switzerland).</strong> Before any ad is requested you are shown
+    Google's consent form, where you can accept or refuse. You can change your answer at any time in
+    the app under <em>Settings → Privacy → Ad privacy choices</em>. If you refuse, no ad is
+    requested, and you can still buy Pro.</li>
+  <li><strong>Advertising ID.</strong> You can reset or delete it at any time in your phone's settings
+    (Settings → Google → Ads, or Security and privacy → Ads on some phones).</li>
+  <li><strong>Personalised ads.</strong> You can manage ad personalisation at
+    <a href="https://myadcenter.google.com">myadcenter.google.com</a>.</li>
+  <li><strong>Not watching ads at all.</strong> The ad pass is optional. Everything free in One
+    Camera works without ever watching an ad.</li>
+</ul>
+
+<h2>What One Camera itself does not do</h2>
+<ul>
+  <li><strong>No location of its own.</strong> The app requests no location permission, and your
+    photos are not geotagged by One Camera.</li>
+  <li><strong>No analytics, telemetry or crash reporting</strong> of its own.</li>
   <li><strong>No account.</strong> You never sign in, and there is nothing to sign in to.</li>
-  <li><strong>No identifiers.</strong> The app does not read your advertising ID or your Android
-    device ID, and does not create an identifier of its own.</li>
-  <li><strong>No data selling or sharing.</strong> There is nothing to sell or share.</li>
+  <li><strong>No selling of data.</strong> Blinqdroid does not sell personal data.</li>
 </ul>
 
 <h2>Purchases</h2>
@@ -86,8 +125,8 @@ stored by One Camera or Blinqdroid. The app asks Google Play whether a purchase 
 only a yes or no.</p>
 <p>Google's own handling of that transaction is covered by
 <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
-<p>The seven-day trial is tracked by a timestamp stored on your own device. Nothing about the trial
-is sent anywhere.</p>
+<p>The seven-day trial and the 24-hour ad pass are tracked by timestamps stored on your own device.
+Neither is sent anywhere by One Camera.</p>
 
 <h2>Permissions and why they are needed</h2>
 <div class="table-wrap">
@@ -96,25 +135,26 @@ is sent anywhere.</p>
   <tbody>
     <tr><td>Camera</td><td>To show the viewfinder and take photos and video. Without it the app cannot function.</td></tr>
     <tr><td>Microphone</td><td>To record audio with video.</td></tr>
-    <tr><td>Internet</td><td>Required by the Google Play Billing library to check your purchase. One Camera itself makes no network requests.</td></tr>
-    <tr><td>Network state</td><td>Also from the billing library: it checks whether you are online before contacting the Play Store.</td></tr>
+    <tr><td>Internet and network state</td><td>Used by Google Play Billing to check your purchase, and by Google AdMob to load ads. One Camera itself makes no network requests.</td></tr>
+    <tr><td>Advertising ID and ad services</td><td>Added by Google's ads SDK, to show and measure ads.</td></tr>
     <tr><td>Storage (Android&nbsp;9 and older only)</td><td>To save your photos and videos to the gallery. Android&nbsp;10 and newer need no storage permission.</td></tr>
   </tbody>
 </table>
 </div>
-<p>Internet and network access come with Google's billing library rather than from anything One
-Camera does. They are listed here because they appear on the app's Play Store listing and you are
-entitled to know why.</p>
+<p>A few other system permissions, such as scheduling background tasks, come from Google's ads and
+billing libraries. None gives One Camera access to your photos, contacts, location or files.</p>
 
 <h2>Your rights</h2>
-<p>Because the app collects nothing, there is no personal data of yours to access, correct, export or
-delete, and no request you need to make of us. Uninstalling the app removes it and its settings from
-your device.</p>
+<p>One Camera and Blinqdroid hold no personal data about you, so there is nothing of ours to access,
+correct, export or delete. For data collected by Google's ad software, use the choices above or
+<a href="https://myaccount.google.com/data-and-privacy">Google's privacy controls</a>. Uninstalling
+the app removes it and its settings from your device.</p>
 <p>If you have a question about this policy, write to
 <a href="mailto:blinqdroid@gmail.com">blinqdroid@gmail.com</a>.</p>
 
 <h2>Children</h2>
-<p>One Camera is not directed at children. It collects nothing from anyone, children included.</p>
+<p>One Camera is not directed at children under 13, and we do not knowingly allow children under 13
+to use the ad feature.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the revised version will be posted at this address with a new effective
